@@ -1,0 +1,16 @@
+{"t_ms": 0, "run_id": "run-001", "event": "run_started", "job": "qualify_lead"}
+{"t_ms": 0, "run_id": "run-001", "event": "llm_call", "model": "small-1", "input_tokens": 320, "output_tokens": 45, "duration_ms": 210}
+{"t_ms": 210, "run_id": "run-001", "event": "tool_call", "tool": "lookup_customer", "duration_ms": 35, "ok": true}
+{"t_ms": 245, "run_id": "run-001", "event": "llm_call", "model": "frontier-1", "input_tokens": 890, "output_tokens": 260, "duration_ms": 940}
+{"t_ms": 1185, "run_id": "run-001", "event": "run_finished", "job": "qualify_lead", "status": "ok", "total_ms": 1185}
+{"t_ms": 1185, "run_id": "run-002", "event": "run_started", "job": "book_appointment"}
+{"t_ms": 1185, "run_id": "run-002", "event": "llm_call", "model": "small-1", "input_tokens": 210, "output_tokens": 30, "duration_ms": 160}
+{"t_ms": 1345, "run_id": "run-002", "event": "tool_call", "tool": "check_calendar", "duration_ms": 25, "ok": true}
+{"t_ms": 1370, "run_id": "run-002", "event": "tool_call", "tool": "book_appointment", "duration_ms": 40, "ok": true}
+{"t_ms": 1410, "run_id": "run-002", "event": "run_finished", "job": "book_appointment", "status": "ok", "total_ms": 225}
+{"t_ms": 1410, "run_id": "run-003", "event": "run_started", "job": "handle_complaint"}
+{"t_ms": 1410, "run_id": "run-003", "event": "llm_call", "model": "frontier-1", "input_tokens": 1250, "output_tokens": 380, "duration_ms": 1310}
+{"t_ms": 2720, "run_id": "run-003", "event": "tool_call", "tool": "lookup_customer", "duration_ms": 30, "ok": false}
+{"t_ms": 2750, "run_id": "run-003", "event": "tool_call", "tool": "lookup_customer", "duration_ms": 45, "ok": true}
+{"t_ms": 2795, "run_id": "run-003", "event": "llm_call", "model": "frontier-1", "input_tokens": 640, "output_tokens": 190, "duration_ms": 720}
+{"t_ms": 3515, "run_id": "run-003", "event": "run_finished", "job": "handle_complaint", "status": "escalated", "total_ms": 2105}
