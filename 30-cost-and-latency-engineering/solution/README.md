@@ -1,0 +1,9 @@
+# Solution 30: Try cheap, verify, escalate
+
+**The cascade (`simulator.py`).** `run_cascade` starts from the routed table, then intercepts the two generative step types. `draft` and `reason` run on small-1 first; if the output runs past the ramble threshold (320 tokens for a draft, 420 for reasoning), the attempt is discarded and the step reruns on frontier-1. Both attempts are priced and timed, because a cascade that hides its escalation costs is lying about its one interesting number.
+
+**Reading the row.** On the seeded day: cascade $0.4982 against routed $0.6167 and all_small $0.0627, so it lands where the exercise predicted, between them. 45 of 114 draft and reason steps escalated, just under 40 percent, which is the tuning knob made visible: lower thresholds buy quality and spend the savings, higher thresholds keep the savings and trust the small model more. Average latency improves slightly over routed (4317ms against 4457ms) because most generative steps now finish on the fast model, while p95 gets slightly worse (9398ms against 9034ms) because an escalated step pays for two runs in sequence. That tail is the honest price of the design, and it belongs in the report, not under it.
+
+**When a cascade beats plain routing:** when a step type is bimodal, mostly easy with a hard minority, and you have any cheap signal that separates the two. Drafts and reasoning in a support agent are the classic case: most are routine, a few are genuinely hard, and length (or a checker, or a failed format validation) sorts them well enough.
+
+**When it does not:** when the cheap signal cannot tell easy from hard, the cascade degenerates into paying twice for the hard steps and trusting the small model on the rest, which is worse than either plain strategy. It also loses when nearly everything escalates (you bought two runs for every step) and when tail latency is the product, since escalation is serial by definition.
