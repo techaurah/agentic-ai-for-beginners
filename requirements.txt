@@ -1,0 +1,18 @@
+# Agentic AI for Beginners: requirements
+#
+# This file is intentionally comment-only.
+#
+# The course core runs on the Python 3.11+ standard library alone. Every
+# lesson's demo path works after Lesson 00 setup with nothing installed from
+# this file, so a fresh clone runs before any package decision is made.
+#
+# Optional extras, per lesson (install only when a lesson asks for them, and
+# each such lesson says so at the top):
+#
+#   pip install openai            # OpenAI API lessons (Module 1 onward)
+#   pip install anthropic         # Claude API lessons (Module 1 onward)
+#   pip install langchain langgraph   # Framework lessons (Modules 6 and 7)
+#   pip install httpx             # Convenience HTTP client (Module 2)
+#
+# Pin exact versions inside the lesson that needs them, not here, so this
+# file stays a map rather than a lockfile.

@@ -1,0 +1,98 @@
+# Agentic AI for Beginners
+
+> Agentic AI for Beginners is a free, complete course that teaches you to design, build, test, and ship AI agents that do real work. By TechAurah (TechAura), under the TechAurah Academy name.
+
+Key facts:
+- License: MIT. Price: free. No sign-up, no certificate; the completion artifact is a public capstone project indexed in the course showcase.
+- Format: 36 numbered lessons (00 to 36) plus a capstone, each with a written lesson, runnable code, one exercise, and a worked solution.
+- Stack: Python first, with an n8n no-code track in Lesson 08 and LangGraph in Lesson 22. The course runs on the Python standard library for its demo paths; optional extras are listed in requirements.txt.
+- Zero-credential rule: every lesson runs with fake keys, recorded data, or a free tier. Paid options are flagged at the top of a lesson, never midway.
+- Audience: developers with basic Python, and companies evaluating or rolling out agents (Module 10 is the company track).
+- Capstone: a business assistant that captures and qualifies enquiries, uses a calendar and a spreadsheet or CRM, keeps memory, escalates to a human, and ships deployed with an eval suite and tracing.
+
+## Module 0: Start here
+
+- [00 Course setup](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/00-course-setup): Environment, keys, free tiers, how to use this repo
+- [01 What an AI agent actually is](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/01-what-an-ai-agent-actually-is): Agent vs chatbot vs workflow, in plain language
+- [02 The Agentic AI landscape](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/02-the-agentic-ai-landscape): Frameworks, protocols, and where n8n-style automation fits
+
+## Module 1: LLM foundations for builders
+
+- [03 How LLMs work, enough to build on](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/03-how-llms-work): Tokens, context windows, temperature
+- [04 Calling models through APIs](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/04-calling-models-through-apis): First working call, structured outputs
+- [05 Prompting that survives production](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/05-prompting-that-survives-production): Instructions, few-shot, output contracts
+
+## Module 2: The practical plumbing
+
+- [06 APIs and webhooks](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/06-apis-and-webhooks): How agents touch the real world
+- [07 Working with data](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/07-working-with-data): JSON, files, and spreadsheets as agent state
+- [08 Your first automation](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/08-your-first-automation): An n8n workflow with an LLM step (no-code track)
+
+## Module 3: Agent architecture
+
+- [09 The agent loop](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/09-the-agent-loop): Perceive, decide, act, observe
+- [10 Agent architectures compared](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/10-agent-architectures): Single agent, supervisor, pipeline, swarm, and when each is wrong
+- [11 Planning and reasoning patterns](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/11-planning-and-reasoning-patterns): ReAct, plan-and-execute, reflection
+
+## Module 4: Tool calling
+
+- [12 Function/tool calling end to end](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/12-function-tool-calling): Wiring model tool calls to real functions
+- [13 Designing tools agents can actually use](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/13-designing-good-tools): Schemas, errors, idempotency
+- [14 MCP: giving agents standard tools](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/14-mcp-standard-tools): The Model Context Protocol, with LeadPipe MCP as a case study
+
+## Module 5: Memory and state
+
+- [15 Short-term memory and conversation state](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/15-short-term-memory): Working memory for one conversation
+- [16 Long-term memory](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/16-long-term-memory): Stores, summaries, and what to never store
+- [17 Context engineering](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/17-context-engineering): Fitting the right information into the window
+
+## Module 6: RAG and knowledge
+
+- [18 RAG from scratch](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/18-rag-from-scratch): Chunk, embed, retrieve, answer
+- [19 RAG with a framework, and agentic RAG](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/19-agentic-rag): Retrieval as a tool
+- [20 Grounding and citations](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/20-grounding-and-citations): Making answers checkable
+
+## Module 7: Multi-agent systems
+
+- [21 When one agent is not enough](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/21-roles-and-handoffs): Roles and handoffs
+- [22 Building a two-agent workflow with LangGraph](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/22-researcher-writer-workflow): Researcher plus writer
+- [23 Multi-agent failure modes](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/23-multi-agent-failure-modes): Loops, cost blowouts, conflicting outputs
+
+## Module 8: Evaluation and trust
+
+- [24 Testing agents](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/24-testing-agents): Outcome assertions, not vibes, taught on QualBench
+- [25 LLM-as-judge and human review](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/25-llm-as-judge-and-human-review): Building an eval set from real failures
+- [26 Guardrails, approvals, and human-in-the-loop design](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/26-guardrails-and-approvals): Safe autonomy
+
+## Module 9: Production
+
+- [27 Deployment](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/27-deployment): From notebook to a service that stays up
+- [28 Observability](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/28-observability): Tracing agent runs, reading traces, cost tracking
+- [29 Security and prompt injection](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/29-security-and-prompt-injection): The agent threat model
+- [30 Cost and latency engineering](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/30-cost-and-latency-engineering): Model choice per step, caching, batching
+
+## Module 10: Agents at work (company track)
+
+- [31 Anatomy of a business assistant](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/31-anatomy-of-a-business-assistant): Capture, qualify, book, follow up
+- [32 Agents as a service](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/32-agents-as-a-service): Operating other companies' agents, the AaaS model explained honestly
+- [33 Buying vs building](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/33-buying-vs-building): A decision framework for companies
+
+## Capstone
+
+- [34 Capstone spec and scaffolding](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/34-capstone-spec-and-scaffolding): The business assistant spec
+- [35 Build, evaluate, and harden your capstone](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/35-build-evaluate-and-harden-your-capstone): Eval suite and tracing required
+- [36 Ship it](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/36-ship-it): Deployment, README, and submitting to the course showcase
+
+## Course files
+
+- [README](https://github.com/techaurah/agentic-ai-for-beginners): Course landing page, lessons table, FAQ
+- [PROGRESS.md](https://github.com/techaurah/agentic-ai-for-beginners/blob/main/PROGRESS.md): Copyable progress checklist for learners
+- [Resources](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/resources): Curated docs, papers, communities, and tools, plus a plain-language glossary
+- [Showcase](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/showcase): Index of finished learner capstones and how to submit one
+
+## Optional
+
+- [Contributing](https://github.com/techaurah/agentic-ai-for-beginners/blob/main/CONTRIBUTING.md): Two-tier contribution rule and the lesson quality bar
+- [Translations](https://github.com/techaurah/agentic-ai-for-beginners/tree/main/translations): How translation contributions work
+- [TechAurah profile](https://github.com/techaurah): The other TechAurah Academy courses and open-source tools
+- [TechAurah website](https://techaurah.com): The company behind the course
