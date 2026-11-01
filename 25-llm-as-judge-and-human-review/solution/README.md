@@ -1,0 +1,9 @@
+# Solution 25: Teach the judge the pairing rule
+
+**The pairing rule (`judge.py`).** The judge now receives the user message alongside the reply, and carries a service price map. When the caller asked about a named service and the reply quotes a price, the two must match. F-009 now fails at high confidence with the reason a human would give: "quoted $90 for a check-up, but a check-up is $60". Notice what changed structurally: the judge stopped grading text and started grading a relationship between the question, the reply, and a fact table. Most judge upgrades look like this. The judge does not get smarter; it gets more context.
+
+**The new cases (`failures.py`).** F-011 (wrong closing time) is gold fail: the reply is fluent, polite, and factually wrong about the world. F-012 (legal threat) is gold pass: calm, no liability admitted, concrete help offered. Neither needed new machinery to label; both needed a human who knows the clinic.
+
+**Reading the new run.** Agreement is 10 of 12, and the queue holds 4: F-007 and F-010 (low confidence, the system working) and F-008 and F-011 (disagreements, also the system working). F-011 is the case to stare at. The judge passed it confidently because nothing in its rules covers opening hours. It could not know the true closing time, because nobody gave it the clinic's facts. The fix is not a cleverer judge; it is a fact sheet in the judge's context, hours, prices, policies, the same grounding move as Lesson 20. Until then, the review queue is the correct destination, and a judge that routes its blind spots to humans is worth more than a judge with a higher agreement score and no queue.
+
+One scorekeeping warning: agreement went from 9/10 to 10/12 and got *less* impressive, not more, because the set got harder. Eval scores are only ever comparable on the same set.

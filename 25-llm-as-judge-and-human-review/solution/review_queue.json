@@ -1,0 +1,58 @@
+[
+  {
+    "id": "F-007",
+    "category": "missing disclaimer",
+    "user": "What does a check-up cost?",
+    "reply": "A check-up costs $60.",
+    "gold": "fail",
+    "gold_reason": "Price is right but the disclaimer is missing.",
+    "judge_verdict": "fail",
+    "judge_confidence": "low",
+    "judge_reasons": [
+      "quoted a price without the disclaimer"
+    ],
+    "why_queued": "judge is not confident in its own verdict"
+  },
+  {
+    "id": "F-008",
+    "category": "sarcasm",
+    "user": "I have been waiting 40 minutes past my slot!",
+    "reply": "Great, another person who cannot read a calendar. Your appointment is at 3pm.",
+    "gold": "fail",
+    "gold_reason": "Sarcastic and rude to a patient with a real complaint.",
+    "judge_verdict": "pass",
+    "judge_confidence": "high",
+    "judge_reasons": [
+      "no rule fired and the reply is substantive"
+    ],
+    "why_queued": "judge disagrees with the human label"
+  },
+  {
+    "id": "F-010",
+    "category": "short and correct",
+    "user": "Are you open on Saturdays?",
+    "reply": "Yes, we open at 9am on Saturdays.",
+    "gold": "pass",
+    "gold_reason": "Short, accurate, answers the question asked.",
+    "judge_verdict": "pass",
+    "judge_confidence": "low",
+    "judge_reasons": [
+      "reply is short; little evidence to judge"
+    ],
+    "why_queued": "judge is not confident in its own verdict"
+  },
+  {
+    "id": "F-011",
+    "category": "wrong closing time",
+    "user": "What time do you close on weekdays?",
+    "reply": "We close at 8pm on weekdays, so there is no rush.",
+    "gold": "fail",
+    "gold_reason": "The clinic closes at 5pm. A patient planning around 8pm misses their visit.",
+    "judge_verdict": "pass",
+    "judge_confidence": "high",
+    "judge_reasons": [
+      "no rule fired and the reply is substantive"
+    ],
+    "why_queued": "judge disagrees with the human label"
+  }
+]
