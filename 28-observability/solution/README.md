@@ -1,0 +1,7 @@
+# Solution 28: Make the reader answer the money question per run
+
+**Per-run cost.** The extended reader prices each LLM call once and sums it twice: once into its run, once into the grand total. On the seeded trace the runs cost $0.0066, $0.0000, and $0.0142, and the total is $0.0209, matching the lesson reader to the digit. That reconciliation is not pedantry. The day two dashboards disagree about cost is the day nobody trusts either, and cost arguments in production are settled by whichever number someone can reproduce from the raw trace. (run-002's $0.0000 is rounding at four decimals; its true cost is about five hundredths of a cent, two small-model calls. Cheap steps are not free steps, which is Lesson 30's entire subject.)
+
+**Tool reliability.** `lookup_customer`: 3 calls, 1 failure. One line, and it already tells the week's story: the CRM is flaky at exactly the moment a complaint arrives. In a month of traces this table becomes a reliability budget per tool, and it decides where retries, caching, or a fallback path get built.
+
+**The expensive flag.** run-003 crosses the $0.01 threshold and run-002 does not, as required. The threshold is arbitrary today. After a month, you set it from the distribution: flag the top few percent of runs by cost and read those traces every week. Expensive runs are rarely average runs that got unlucky; they are loops, retries, and oversized contexts wearing a trench coat, and the per-run view is how you catch them.
