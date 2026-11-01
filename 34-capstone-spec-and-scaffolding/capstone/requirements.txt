@@ -1,0 +1,4 @@
+# The capstone core runs on the Python 3.11+ standard library only.
+# Optional extras for the production path (real calendar, real model API)
+# are installed by you in your own fork and noted in your project README,
+# never added here, so the offline eval harness keeps running anywhere.
