@@ -1,0 +1,14 @@
+line,item,illustrative_value,your_value,notes
+volume,enquiries per month,400,,How many enquiries the agent handles
+volume,average turns per enquiry,6,,Messages both ways per enquiry
+model,input tokens per enquiry,9000,,Blended across extraction qualify and reply steps
+model,output tokens per enquiry,1800,,
+model,input price per million USD,0.80,,Illustrative mid-tier model price; check current pricing
+model,output price per million USD,4.00,,Illustrative mid-tier model price; check current pricing
+fixed,hosting USD per month,25,,VPS or serverless baseline
+fixed,tools and data USD per month,40,,Calendar CRM or sheets tier monitoring
+fixed,phone and messaging USD per month,30,,Number rental plus per-message fees
+human,operations hours per month,4,,Review queues prompt tuning trace checks
+human,improvement hours per month,2,,Monthly improvement work agreed with the client
+human,labour rate USD per hour,40,,Blended operator rate for your market
+margin,contingency percent,10,,Covers incidents and usage overruns
