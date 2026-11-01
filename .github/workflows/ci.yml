@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Compile all Python files
+        run: python -m compileall -q .
+
+      - name: Run lesson smoke tests
+        run: |
+          found=0
+          while IFS= read -r f; do
+            found=1
+            echo "Running $f"
+            python "$f"
+          done < <(find . -name smoke_test.py -not -path './.git/*')
+          if [ "$found" -eq 0 ]; then
+            echo "No smoke_test.py files found yet; compile check only."
+          fi
