@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430">
+<rect width="1200" height="430" fill="#FFFFFF"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#0891B2"/></marker></defs>
+<text x="40" y="52" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#0B1F4A">Evaluation: test outcomes, not vibes</text>
+<text x="40" y="82" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" fill="#475569">A scenario suite you rerun after every change is what makes an agent safe to improve.</text>
+<rect x="40" y="98" width="90" height="5" fill="#0891B2"/>
+<rect x="40" y="150" width="208" height="95" rx="12" fill="#E0F2FE"/>
+<text x="144.0" y="193.5" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0B1F4A">Scenarios</text>
+<text x="144.0" y="217.5" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#33506E">real tasks, fixed inputs</text>
+<line x1="251" y1="197" x2="267" y2="197" stroke="#0891B2" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="270" y="150" width="208" height="95" rx="12" fill="#E0F2FE"/>
+<text x="374.0" y="193.5" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0B1F4A">Run the agent</text>
+<text x="374.0" y="217.5" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#33506E">same way every time</text>
+<line x1="481" y1="197" x2="497" y2="197" stroke="#0891B2" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="500" y="150" width="208" height="95" rx="12" fill="#0B1F4A"/>
+<text x="604.0" y="193.5" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#FFFFFF">Grade outcomes</text>
+<text x="604.0" y="217.5" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#BFE3F2">booked? correct? safe?</text>
+<line x1="711" y1="197" x2="727" y2="197" stroke="#0891B2" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="730" y="150" width="208" height="95" rx="12" fill="#E0F2FE"/>
+<text x="834.0" y="193.5" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0B1F4A">Fix one thing</text>
+<text x="834.0" y="217.5" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#33506E">smallest change first</text>
+<line x1="941" y1="197" x2="957" y2="197" stroke="#0891B2" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="960" y="150" width="208" height="95" rx="12" fill="#E0F2FE"/>
+<text x="1064.0" y="193.5" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0B1F4A">Rerun all</text>
+<text x="1064.0" y="217.5" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#33506E">catch regressions</text>
+<rect x="330" y="300" width="540" height="80" rx="12" fill="#FEF3C7"/>
+<text x="600.0" y="336.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0B1F4A">HUMAN REVIEW GATE</text>
+<text x="600.0" y="360.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#7C5A03">Low-confidence and high-stakes cases go to a person</text>
+<line x1="600" y1="249" x2="600" y2="296" stroke="#0891B2" stroke-width="3" marker-end="url(#ah)"/>
+<text x="40" y="415" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#475569">Lessons 24 to 26: outcome tests, LLM-as-judge with human review, guardrails and approvals.</text>
+</svg>

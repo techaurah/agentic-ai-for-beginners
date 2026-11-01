@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="540" viewBox="0 0 1200 540">
+<rect width="1200" height="540" fill="#FFFFFF"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#0891B2"/></marker></defs>
+<text x="40" y="52" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#0B1F4A">A production agent is layers, not a prompt</text>
+<text x="40" y="82" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" fill="#475569">Deployment, tracing, security and cost control are what separate a demo from a system.</text>
+<rect x="40" y="98" width="90" height="5" fill="#0891B2"/>
+<rect x="140" y="130" width="920" height="74" rx="12" fill="#E0F2FE"/>
+<text x="600.0" y="163.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0B1F4A">DEPLOYMENT</text>
+<text x="600.0" y="187.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#33506E">Runs on a schedule or a server, not your laptop</text>
+<rect x="140" y="218" width="920" height="74" rx="12" fill="#E0F2FE"/>
+<text x="600.0" y="251.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0B1F4A">OBSERVABILITY</text>
+<text x="600.0" y="275.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#33506E">Every run traced: inputs, tool calls, outputs, cost</text>
+<rect x="140" y="306" width="920" height="74" rx="12" fill="#FEF3C7"/>
+<text x="600.0" y="339.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0B1F4A">SECURITY</text>
+<text x="600.0" y="363.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#7C5A03">Injection defence, least-privilege tools, approvals</text>
+<rect x="140" y="394" width="920" height="74" rx="12" fill="#0B1F4A"/>
+<text x="600.0" y="427.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#FFFFFF">THE AGENT</text>
+<text x="600.0" y="451.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#BFE3F2">Loop, tools, memory, guardrails from Modules 2 to 7</text>
+<text x="40" y="515" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#475569">Lessons 27 to 30 add one layer at a time, in this order.</text>
+</svg>

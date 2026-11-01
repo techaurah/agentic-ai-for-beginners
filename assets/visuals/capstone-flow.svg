@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+<rect width="1200" height="300" fill="#FFFFFF"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#0891B2"/></marker></defs>
+<text x="40" y="52" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#0B1F4A">The capstone: a business assistant that does the whole job</text>
+<text x="40" y="82" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" fill="#475569">Lessons 34 to 36 assemble everything into one deployed assistant for a fictional service company.</text>
+<rect x="40" y="98" width="90" height="5" fill="#0891B2"/>
+<rect x="40" y="140" width="184" height="90" rx="12" fill="#0B1F4A"/>
+<text x="132.0" y="181.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#FFFFFF">Enquiry arrives</text>
+<text x="132.0" y="205.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#BFE3F2">form, DM, or email</text>
+<line x1="228" y1="185" x2="270" y2="185" stroke="#0891B2" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="274" y="140" width="184" height="90" rx="12" fill="#E0F2FE"/>
+<text x="366.0" y="181.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0B1F4A">Capture</text>
+<text x="366.0" y="205.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#33506E">structured record</text>
+<line x1="462" y1="185" x2="504" y2="185" stroke="#0891B2" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="508" y="140" width="184" height="90" rx="12" fill="#E0F2FE"/>
+<text x="600.0" y="181.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0B1F4A">Qualify</text>
+<text x="600.0" y="205.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#33506E">score 0-100, route it</text>
+<line x1="696" y1="185" x2="738" y2="185" stroke="#0891B2" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="742" y="140" width="184" height="90" rx="12" fill="#E0F2FE"/>
+<text x="834.0" y="181.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0B1F4A">Book</text>
+<text x="834.0" y="205.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#33506E">real calendar slot</text>
+<line x1="930" y1="185" x2="972" y2="185" stroke="#0891B2" stroke-width="3" marker-end="url(#ah)"/>
+<rect x="976" y="140" width="184" height="90" rx="12" fill="#0B1F4A"/>
+<text x="1068.0" y="181.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#FFFFFF">Follow up</text>
+<text x="1068.0" y="205.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#BFE3F2">until answered</text>
+<text x="40" y="275" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#475569">HOT leads (80+) go straight to a human with a full summary. The evaluation suite from Lesson 35 grades every step.</text>
+</svg>

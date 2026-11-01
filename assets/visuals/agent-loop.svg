@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480">
+<rect width="1200" height="480" fill="#FFFFFF"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#0891B2"/></marker></defs>
+<text x="40" y="52" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#0B1F4A">The agent loop</text>
+<text x="40" y="82" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" fill="#475569">Everything an agent does is this loop, repeated until the goal is met or a limit stops it.</text>
+<rect x="40" y="98" width="90" height="5" fill="#0891B2"/>
+<rect x="440" y="140" width="320" height="90" rx="12" fill="#0B1F4A"/>
+<text x="600.0" y="181.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#FFFFFF">THINK</text>
+<text x="600.0" y="205.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#BFE3F2">Reason about the goal</text>
+<rect x="820" y="280" width="320" height="90" rx="12" fill="#E0F2FE"/>
+<text x="980.0" y="321.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0B1F4A">ACT</text>
+<text x="980.0" y="345.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#33506E">Call a tool or answer</text>
+<rect x="440" y="340" width="320" height="90" rx="12" fill="#E0F2FE"/>
+<text x="600.0" y="381.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0B1F4A">OBSERVE</text>
+<text x="600.0" y="405.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#33506E">Read the tool result</text>
+<rect x="60" y="280" width="320" height="90" rx="12" fill="#E0F2FE"/>
+<text x="220.0" y="321.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0B1F4A">PERCEIVE</text>
+<text x="220.0" y="345.0" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#33506E">Goal + context + memory</text>
+<line x1="600" y1="234" x2="760" y2="300" stroke="#0891B2" stroke-width="3" marker-end="url(#ah)"/>
+<line x1="820" y1="325" x2="764" y2="372" stroke="#0891B2" stroke-width="3" marker-end="url(#ah)"/>
+<line x1="436" y1="385" x2="384" y2="330" stroke="#0891B2" stroke-width="3" marker-end="url(#ah)"/>
+<line x1="220" y1="276" x2="436" y2="190" stroke="#0891B2" stroke-width="3" marker-end="url(#ah)"/>
+<text x="40" y="465" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#475569">Guardrails and step limits sit around the loop. Lesson 09 builds it; Lesson 26 fences it.</text>
+</svg>
